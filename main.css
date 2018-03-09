@@ -1,8 +1,83 @@
-/* Styles for Product Page Customization */
-/* NOTE: Do not edit the Bootstrap CSS files. */
-
 body {
-    padding-top: 30px;
-    padding-bottom: 20px;
-    color: green;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
+
+
+div.jumbotron {
+  background-image: url("../images/main-img.jpg");
+  background-position: center;
+  height: 70vh;
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 7rem;
+}
+
+h1.display-2 {
+  text-shadow: 2px 3px 3px #000000;
+}
+
+p.h2 {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.divider {
+  margin: 5rem 0;
+}
+
+div.features {
+  margin: 7rem auto;
+}
+
+p.features {
+font-size: 2rem;
+}
+
+div.video-container {
+  margin: 7rem auto;
+}
+
+div.video {
+ box-shadow: 20px 20px 10px #6c757d;
+}
+
+div.about {
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+/*! CATALOG START */
+
+.catalog {
+  margin: 7rem auto;
+}
+
+.catalog-item {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/*! TESTIMONIALS START */
+
+.testimonials .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.testimonials .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+@media (min-width: 62em) {
+  
+.feature-heading {
+    margin-top: 7rem;
+  }
+}
+
+
+

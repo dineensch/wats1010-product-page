@@ -1,54 +1,251 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- TODO: Add proper head tag to provide a page description for search
-             engines. -->
-        <title>API Superstore</title>
-        <!-- Bootstrap CSS Framework -->
-        <!-- You can remove the ``link`` tags below if you don't want to use
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="API Superstore">
+  <meta name="keywords" content="api,apis">
+  <meta name="description" content="Gain access to the newest APIs available through a globally connected catalog.">
+
+  <title>API Superstore</title>
+  <!--Bootstrap CSS Framework -->
+  <!-- You can remove the ``link`` tags below if you don't want to use
              Bootstrap with your site. If you choose to use Bootstrap, be sure
              to reference the resources and the Bootstrap official
-             documentation: http://getbootstrap.com.
+             documentation: http://getbootstrap.com. -->
 
-             Please Note: This repo does not include the Bootstrap Javascript
-             plugins, so you cannot use the features documented under
-             "Javascript" on the Bootstrap documentation site. -->
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.css">
-        <!-- End Bootstrap CSS Framework -->
 
-        <!-- TODO: replace favicon, apple-touch-icon, and tile images to best
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="main.css" rel="stylesheet">
+  <link href="register.css" rel="stylesheet">
+
+  <!-- End Bootstrap CSS Framework -->
+
+  <!-- TODO: replace apple-touch-icon, and tile images to best
              support bookmarking. -->
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="favicon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
 
-    </head>
-    <body>
-        <!-- Note: If you do not see a lamp icon in the heading below
-             when you view this file in a web browser, then there is an issue
-             with how Bootstrap is linked to this page. -->
-        <h1><span class="glyphicon glyphicon-lamp"></span> Hello World!</h1>
-        <!-- TODO: Populate this page with all the content you deem
-             necessary to create a compelling product page! -->
 
-        <!-- TODO: Create an area to put the explainer video. -->
+<!-- NAV START -->
 
-        <!-- TODO: Create an area to put the long product description. -->
+<body class="pt-0">
 
-        <!-- TODO: Create an area to put customer testimonials. -->
+  <div class="alert alert-dark p-2 font-weight-light text-center text-light bg-dark m-0" role="alert">Subscribe to our newsletter and receive a 20%-off discount code. | <a href="#register" class="alert-link text-warning font-weight-normal">Sign-up</a>
+  </div>
 
-        <!-- TODO: Create an area to show features. -->
 
-        <!-- TODO: Create an area to show company contact info (phone,
+  <nav class="navbar navbar-expand-md navbar-light sticky-top bg-light py-0">
+    <a class="navbar-brand font-weight-bold" href="#home"><img class="img-fluid d-inline-block align-middle" src="images/logo.png" width="90" height="90" alt="company logo">Superstore</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#features" role="button">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about" role="button">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#catalog" role="button">Catalog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact" role="button">Contact</a>
+        </li>
+      </ul>
+      <p><a class="btn btn-outline-warning my-2 my-sm-0 text-dark" href="#register">Buy Now</a></p>
+    </div>
+  </nav>
+
+  <!-- NAV END -->
+
+
+
+  <!-- JUMBOTRON START -->
+  <main>
+    <div class="jumbotron text-center" id="home">
+      <div class="container-fluid">
+        <h1 class="display-2 text-white font-weight-normal text-uppercase">All the API<span class="text-lowercase">s</span></h1>
+        <hr class="my-2 font-weight-bold bg-light">
+        <h1 class="display-2 text-white font-weight-normal text-uppercase">All the Time</h1>
+        <p class="text-white h2 pt-3">Gain access to the newest APIs available through a globally connected catalog.</p>
+        <p><a class="btn btn-warning btn-md font-weight-bold" href="#register">Get Started</a></p>
+      </div>
+    </div>
+   <!-- JUMBOTRON END --> 
+
+ <div class="container">
+   
+    </div> 
+  <!-- FEATURES START -->  
+    <div class="container features" id="features">
+      <div class="row">
+        <div class="col-sm-6 p-0">
+          <img class="img-fluid w-100" src="images/stand-out.jpeg" alt="depicting success">
+        </div>
+        <div class="col-sm-6 bg-dark text-light pt-0 pl-4">
+          <h1 class="feature-heading font-weight-bold ">stand out</h1>
+          <p class="features pr-3 pb-2 mb-0">Our API providers connect you with the latest services and features to enhance your business.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 bg-light text-dark pt-0 pr-4 text-right">
+          <h1 class="feature-heading font-weight-bold">build faster</h1>
+          <div class="container pl=3">
+            <p class="features pl-3 pb-2 mb-0">We keep our catalog updated and easy to navigate so you can spend less time searching.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 p-0">
+          <img class="img-fluid w-100" src="images/build-faster.jpg" alt="graph depicting success">
+        </div>
+      </div>
+    </div>
+      <!-- FEATURES END -->
+
+
+      <!-- ABOUT START -->
+      <div class="video-container container-fluid p-5 bg-light" id="about">
+        <div class="video row">
+          <div class="col-sm-6 embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/L48g1ZWLMdo?ecver=2" allowfullscreen></iframe>
+          </div>
+          <div class="about col-sm-6 bg-light text-dark pt-0 text-left">
+            <h3 class="pt-5 font-weight-bold">what we do</h3>
+            <hr class="my-2 font-weight-bold bg-light">
+            <p class="mb-2">Finding the perfect API can be time-consuming.</p>
+            <p class="mb-2">Let us do the work for you.</p>
+          </div>
+        </div>
+      </div>
+      <!-- ABOUT END -->
+
+
+      <!-- CATALOG START -->
+      <div class="catalog py-5">
+        <div class="container" id="catalog">
+          <h2 class="display-4 text-center text-uppercase">Catalog</h2>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" src="images/maps.jpg" alt="Navigation on a cellphone">
+                  <div class="card-body bg-secondary">
+                    <h2 class="catalog-item card-text text-center text-white">Maps</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" src="images/social_media.jpg" alt="Social app icons on a cellphone">
+                  <div class="card-body bg-secondary">
+                    <h2 class="catalog-item display-4 card-text text-center text-white">Social Media</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" src="images/ecommerce.jpg" alt="Woman holding credit card, shopping online">
+                  <div class="card-body bg-secondary">
+                    <h2 class="catalog-item display-4 card-text text-center text-white">Ecommerce</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- CATALOG END -->
+  
+
+    <!-- REGISTER START --> 
+      <div class="form-register py-5">
+        <h1 class="mb-3 font-weight-normal text-center text-uppercase mb-2">Sign up</h1>
+
+        <div class="form-register">
+
+          <form class="bg-white">
+            <label for="inputeFirstName" class="sr-only">First Name</label>
+            <input type="text" id="inputeFirstName" class="form-control" placeholder="First Name" required autofocus>
+
+            <label for="inputeLastName" class="sr-only">Last Name</label>
+            <input type="text" id="inputeLastName" class="form-control" placeholder="Last Name" required>
+
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+
+            <div class="checkbox mb-3">
+              <label>
+          <input type="checkbox" value="remember-me">Subscribe to Newsletter
+        </label>
+            </div>
+
+            <button class="btn btn-lg btn-warning btn-block text-uppercase" type="submit" id="register">register</button>
+          </form>
+        </div>
+      </div>
+    <!-- REGISTER END -->   
+  
+  
+  
+  
+<!-- TESTIMONIALS START -->
+      <div class="container testimonials">
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="images/review1.jpeg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="images/review2.jpeg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="images/review3.jpeg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+  
+  
+
+
+
+      <!-- TODO: Create an area to put the long product description. -->
+
+      <!-- TODO: Create an area to put customer testimonials. -->
+
+
+      <!-- TODO: Create an area to show company contact info (phone,
              location, etc.) -->
 
-        <!-- TODO: Create an area that allows users to Share links to the
+      <!-- TODO: Create an area that allows users to Share links to the
              page. -->
 
-        <!-- TODO: Create a call to action link to get users to sign up for the
-             service. -->
-    </body>
+
+
+    </div>
+<footer>
+</footer>
+
+  </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="assets/jquery/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  
+</body>
 </html>
