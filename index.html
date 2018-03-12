@@ -13,6 +13,8 @@
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.theme.css">
+
 
   <!-- Custom styles for this template -->
   <link href="main.css" rel="stylesheet">
@@ -27,7 +29,7 @@
 
 <!-- NAV START -->
 
-<body>
+<body data-spy="scroll" data-target=".sticky-top">
 
   <div class="alert alert-dark p-2 font-weight-light text-center text-light bg-dark m-0" role="alert">Subscribe to our newsletter and receive a 20%-off discount code. | <a href="#subscribe" class="alert-link text-warning font-weight-normal">Sign-up</a>
   </div>
@@ -40,21 +42,21 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto ">
         <li class="nav-item">
-          <a class="nav-link" href="#features" role="button">Features</a>
+          <a class="nav-link topnav" href="#features" role="button">Features</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about" role="button">About</a>
+          <a class="nav-link topnav" href="#about" role="button">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#catalog" role="button">Catalog</a>
+          <a class="nav-link topnav" href="#catalog" role="button">Catalog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact" role="button">Contact</a>
+          <a class="nav-link topnav" href="#contact" role="button">Contact</a>
         </li>
         <li>
-          <p><a class="btn btn-outline-warning my-2 my-sm-0 text-dark" href="#register">Buy Now</a></p>
+          <p><a class="btn btn-outline-warning btn-sm text-dark navlink top-nav-btn" href="#register">Buy Now</a></p>
         </li>
       </ul>
     </div>
@@ -76,11 +78,13 @@
     </div>
     <!-- JUMBOTRON END -->
 
-    
-    <div class="container">
+
+    <div class="container pt-5">
 
       <!-- FEATURES START -->
-      <div class="container features" id="features">
+      <span class="anchor" id="features"></span>
+      <div class="container pt-5">
+   
         <div class="row">
           <div class="col-sm-6 p-0">
             <img class="img-fluid w-100" src="images/stand-out.jpeg" alt="depicting success">
@@ -106,7 +110,8 @@
 
 
       <!-- ABOUT START -->
-      <div class="video-container container-fluid p-5 bg-light" id="about">
+      <span class="anchor" id="about"></span>
+      <div class="video-container container-fluid p-5 bg-light">
         <div class="video row">
           <div class="col-sm-6 embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/L48g1ZWLMdo?ecver=2" allowfullscreen></iframe>
@@ -123,9 +128,10 @@
 
 
       <!-- CATALOG START -->
+      <span class="anchor" id="catalog"></span>
       <div class="catalog py-5">
-        <div class="container" id="catalog">
-          <h2 class="display-4 text-center text-uppercase">Catalog</h2>
+        <div class="container">
+          <h1 class="text-center text-uppercase font-weight-normal mb-5">Catalog</h1>
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
@@ -158,6 +164,7 @@
 
 
       <!-- REGISTER START -->
+      <span class="anchor" id="register"></span>      
       <div class="form-register py-5">
         <h1 class="mb-3 font-weight-normal text-center text-uppercase mb-2">Sign up</h1>
 
@@ -221,17 +228,17 @@
         </div>
         <!-- /.row -->
       </div>
+      
+    </div>
+    <!-- BODY CONTAINER END -->
 
 
       <!-- NEWSLETTER SIGN UP START -->
-
-
-
-
-      <div class="newsletter bg-light text-center">
-        <p>Stay up-to-date on latest API trends</p>
-        <hr class="my-2 font-weight-bold bg-light">
-        <form class="form-inline mt-2 mt-md-0">
+      <span class="anchor" id="subscribe"></span>
+      <div class="newsletter container-fluid bg-light text-center pt-4">
+        <h5 class="font-weight-normal">Stay up-to-date on latest API trends</h5>
+        <hr class="my-4 font-weight-bold bg-light">
+        <form class="form-inline mt-2 mt-md-0 pt-0 pb-3">
           <div class="form-group mx-sm-3">
             <label for="inputEmail" class="sr-only">Email address</label>
             <input type="email" id="inputeEmail" class="form-control" placeholder="Email address">
@@ -244,53 +251,58 @@
 
 
 
-    </div>
-
-
     <!-- FOOTER START -->
-    <footer class="navbar bg-dark text-light m-2 p-2">
 
-      <div class="row">
-        <div class="col-12 col-sm">
-          <p class="font-weight-bold">API SUPERSTORE</p>
-          <small class="d-block mb-3 text-muted">&copy; 2018 </small>
-          <p>206.555.1234</p>
-          <p>info@apisuperstore.com</p>
-          <p>Seattle, WA</p>
+    <footer class="py-5 bg-dark">
+      
+       <div class="container">
+        <div class="d-flex flex-row justify-content-between">
+            <ul class="nav footer-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#catalog">Catalog</a>
+              </li>
+            </ul>
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/" role="button">Twitter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/" role="button">Facebook</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.yelp.com/" role="button">Yelp</a>
+              </li>
+            </ul>
+
+          
+          </div> 
+        </div>
+       
+    <span class="anchor" id="contact"></span>        
+      <div class="container" id="contact">
+        <div class="d-flex flex-row justify-content-between text-white">
+          <div class="row">
+            <p class="font-weight-bold mx-1">API SUPERSTORE</p>
+            <p class="d-block mb-3 text-muted">&copy; 2018 </p>            
+          </div>
+          <div class="row">
+            <p class="px-1 border-right">206.555.1234</p>
+            <p class="px-1 border-right">info@apisuperstore.com</p>
+            <p class="px-1">Seattle, WA</p>
+          </div>
         </div>
       </div>
-
-      <hr class="my-2 font-weight-bold bg-light">
-
-      <div class="row">
-
-        <div class="col-6 col-sm">
-          <p><a class="nav-link" href="#features">Features</a></p>
-        </div>
-
-        <div class="col-6 col-sm">
-          <p><a class="nav-link" href="#about">About</a></p>
-        </div>
-
-        <div class="col-6 col-sm">
-          <p><a class="nav-link" href="#catalog">Catalog</a></p>
-        </div>
-
-        <div class="col-6 col-sm">
-          <p>Share:</p>
-          <ul class="list-unstyled ist-text-small text-center">
-            <li class="inline"><a class="text-muted" href="https://twitter.com/">Twitter</a></li>
-            <li><a class="text-muted" href="https://www.facebook.com/">Facebook</a></li>
-            <li><a class="text-muted" href="https://www.yelp.com/">Yelp</a></li>
-          </ul>
-        </div>
-
-      </div>
-      <!-- BODY CONTAINER END -->
-
-
+      
     </footer>
     <!-- FOOTER END -->
+
+
 
 
   </main>
