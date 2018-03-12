@@ -59,7 +59,57 @@ div.about {
     line-height: 1.2;
 }
 
+/*! REGISTER START */
+
+.form-register .checkbox {
+  font-weight: 400;
+}
+.form-register .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-register .form-control:focus {
+  z-index: 2;
+}
+.form-register input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-register input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+form {
+  max-width: 600px;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  
+}
+
+@media (min-width: 576px) {
+.form-register {
+    padding: 4rem 2rem;
+}
+
+.form-register {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+
+
 /*! TESTIMONIALS START */
+
+.testimonials {
+  margin-top: 7rem auto;
+}
 
 .testimonials .col-lg-4 {
   margin-bottom: 1.5rem;
@@ -71,6 +121,12 @@ div.about {
   margin-left: .75rem;
 }
 
+div.reviewer {
+  font-size: 0.8rem;
+}
+
+
+/*! RESPONSIVE FORMATTING */
 
 @media (min-width: 62em) {
   
@@ -78,6 +134,5 @@ div.about {
     margin-top: 7rem;
   }
 }
-
 
 
