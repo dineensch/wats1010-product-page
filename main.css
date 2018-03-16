@@ -65,8 +65,12 @@ div.video-container {
   margin: 7rem auto;
 }
 
-div.video {
+div.video-section {
   box-shadow: 20px 20px 10px #6c757d;
+}
+
+div.video {
+  border: 1px solid black;
 }
 
 div.about {
@@ -75,7 +79,7 @@ div.about {
 }
 
 
-
+/*! ABOUT START */
 
 
 
